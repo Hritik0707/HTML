@@ -89,3 +89,9 @@ img {
   margin: 20px auto;
   border-radius: 8px;
 }
+
+img {
+  display: block;
+  margin: 20px auto;
+  border-radius: 8px;
+}
