@@ -177,3 +177,78 @@ img {
   top: -10px;
   color: lightgray;
 }
+
+/* Workshop 4: Layout & Media Queries    */
+/* ===================================== */
+
+/* Task 1: Flexbox Layout */
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.box {
+  background-color: lightblue;
+  padding: 20px;
+  text-align: center;
+  border-radius: 6px;
+}
+
+/* Task 2: Grid Layout */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  margin-top: 20px;
+}
+
+.grid-item {
+  background-color: lightgreen;
+  padding: 20px;
+  text-align: center;
+  border-radius: 6px;
+}
+
+/* Task 3: Media Queries */
+.responsive-box {
+  padding: 20px;
+  text-align: center;
+  font-size: 1.1em;
+  border-radius: 6px;
+  margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+  .responsive-box {
+    background-color: lightcoral;
+  }
+}
+
+@media (min-width: 601px) {
+  .responsive-box {
+    background-color: lightseagreen;
+  }
+}
+
+/* Task 4: Semantic Layout */
+header, main, footer {
+  margin-top: 30px;
+  padding: 15px;
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: darkblue;
+}
