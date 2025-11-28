@@ -252,3 +252,111 @@ header nav ul li a {
   text-decoration: none;
   color: darkblue;
 }
+
+
+/* ===================================== */
+/* Workshop 5: Responsive Design         */
+/* ===================================== */
+
+/* Task 1: Responsive Columns */
+.responsive-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.column {
+  flex: 1;
+  padding: 10px;
+  background-color: #d7ebff;
+  border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+  }
+}
+
+/* Task 2: Responsive Image */
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Task 3: Media Query Background Box */
+.media-query-box {
+  padding: 20px;
+  text-align: center;
+  border-radius: 6px;
+  font-size: 1.2em;
+}
+
+@media (max-width: 600px) {
+  .media-query-box {
+    background-color: lightcoral;
+  }
+}
+
+@media (min-width: 601px) {
+  .media-query-box {
+    background-color: lightblue;
+  }
+}
+
+/* Task 4: Responsive Navigation Bar */
+.responsive-nav {
+  background-color: #333;
+  padding: 10px 20px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: sticky;   /* stays on top when scrolling */
+  top: 0;
+  z-index: 1000;
+}
+
+
+.responsive-nav .menu-toggle {
+  display: none;
+  background: #444;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.responsive-nav .nav-list {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  padding-left: 0;
+}
+
+.responsive-nav .nav-list a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Mobile version */
+@media (max-width: 600px) {
+  .responsive-nav .nav-list {
+    display: none;
+    flex-direction: column;
+    background-color: #222;
+    padding: 10px;
+    border-radius: 6px;
+  }
+
+  .responsive-nav .menu-toggle {
+    display: block;
+  }
+}
+
+.nav-list.show {
+  display: flex !important;
+}

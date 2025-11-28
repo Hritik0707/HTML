@@ -5,16 +5,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  
+    <!-- Task 4: Responsive Navigation -->
+    <h3>Task 4: Responsive Navigation Bar</h3>
+    <nav class="responsive-nav">
+      <button class="menu-toggle">☰ Menu</button>
+      <ul class="nav-list">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
     <!-- Task 1: Basic HTML Page with Image -->
     <h1>Welcome to Hritik Neupane's Page</h1>
     <p>Hello! My name is Hritik Neupane. I am from Nepal, living in Helsinki, Finland.</p>
     
-    <!-- Working HTML5 Logo Image -->
     <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" 
          alt="Official HTML5 logo showing an orange shield and white 5 symbol" 
          width="300">
 
-    <hr>git remote -v
+    <hr>
 
     <!-- Task 2: List of Hobbies -->
     <h2>My Hobbies</h2>
@@ -63,21 +74,17 @@
         <input type="submit" value="Submit">
     </form>
 
-     <hr>
+    <hr>
 
     <!-- Workshop 3: Advanced CSS -->
-
     <h2>Workshop 3: Advanced CSS</h2>
 
-    <!-- Task 1: CSS Transitions -->
     <h3>Task 1: CSS Transitions</h3>
     <button class="transition-button">Hover me</button>
 
-    <!-- Task 2: CSS Animations -->
     <h3>Task 2: CSS Animations</h3>
     <div class="animation-box"></div>
 
-    <!-- Task 3: CSS Pseudo-classes -->
     <h3>Task 3: CSS Pseudo-classes</h3>
     <ul class="pseudo-list">
       <li>Item 1</li>
@@ -86,28 +93,22 @@
       <li>Item 4</li>
     </ul>
 
-    <!-- Task 4: CSS Filters -->
     <h3>Task 4: CSS Filters</h3>
     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Mona_Lisa.jpg" 
          alt="Sample Image"
          class="filter-image"
          width="200">
 
-    <!-- Task 5: CSS Pseudo-elements -->
     <h3>Task 5: CSS Pseudo-elements</h3>
     <blockquote class="quote">
       This is a sample quote to demonstrate pseudo-elements in CSS.
     </blockquote>
 
-      <hr>
+    <hr>
 
-    <!-- ===================================== -->
-    <!-- Workshop 4: Layout & Media Queries    -->
-    <!-- ===================================== -->
-
+    <!-- Workshop 4: Layout & Media Queries -->
     <h2>Workshop 4: Layout & Media Queries</h2>
 
-    <!-- Task 1: Flexbox Layout -->
     <h3>Task 1: Flexbox Layout</h3>
     <div class="flex-container">
         <div class="box">Box 1</div>
@@ -115,7 +116,6 @@
         <div class="box">Box 3</div>
     </div>
 
-    <!-- Task 2: Grid Layout -->
     <h3>Task 2: Grid Layout</h3>
     <div class="grid-container">
         <div class="grid-item">1</div>
@@ -126,15 +126,12 @@
         <div class="grid-item">6</div>
     </div>
 
-    <!-- Task 3: Media Queries -->
     <h3>Task 3: Media Queries</h3>
     <div class="responsive-box">
         Resize the window to see the effect
     </div>
 
-    <!-- Task 4: Semantic Elements -->
     <h3>Task 4: Semantic Page Structure</h3>
-
     <header>
         <h1>My Website</h1>
         <nav>
@@ -162,6 +159,38 @@
         <p>Copyright 2025</p>
     </footer>
 
+    <hr>
+
+    <!-- ===================================== -->
+    <!-- Workshop 5: Responsive Design Tasks   -->
+    <!-- ===================================== -->
+
+    <h2>Workshop 5: Responsive Design</h2>
+
+    <!-- Task 1: Responsive Columns -->
+    <h3>Task 1: Responsive Layout</h3>
+    <div class="responsive-container">
+        <div class="column">Column 1</div>
+        <div class="column">Column 2</div>
+    </div>
+
+    <!-- Task 2: Responsive Image -->
+    <h3>Task 2: Responsive Image</h3>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Mona_Lisa.jpg" 
+         alt="Responsive Image"
+         class="responsive-image">
+
+    <!-- Task 3: Media Query Box -->
+    <h3>Task 3: Media Queries</h3>
+    <div class="media-query-box">Resize the window to see the effect</div>
+
+  
+
+    <script>
+      document.querySelector('.menu-toggle').addEventListener('click', () => {
+        document.querySelector('.nav-list').classList.toggle('show');
+      });
+    </script>
 
 </body>
 </html>
