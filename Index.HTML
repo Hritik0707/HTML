@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hritik Neupane | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    section {
+      padding: 70px 0;
+    }
+
+    .hero {
+      background-color: #0d6efd;
+      color: white;
+      text-align: center;
+    }
+
+    img {
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+
+    .footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    .contact-form {
+      max-width: 400px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#home">Hritik Neupane</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HOME -->
+<section id="home" class="hero">
+  <div class="container">
+    <h1>Welcome to my page</h1>
+    <p class="lead">I am Hritik Neupane</p>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <h2>About Me</h2>
+    <p>
+      Hello! My name is Hritik Neupane. I am from Nepal and currently living in Helsinki, Finland.
+      I am learning web development and building responsive websites.
+    </p>
+
+    <h4>My Hobbies</h4>
+    <ul>
+      <li>Playing football</li>
+      <li>Watching movies</li>
+      <li>Learning about new technologies</li>
+    </ul>
+
+    <!-- Hobby Images (Football image removed) -->
+    <div class="row mt-4">
+      <div class="col-md-6">
+        <h5>Movies</h5>
+        <img 
+          src="https://images.unsplash.com/photo-1524985069026-dd778a71c7b4" 
+          alt="Watching movies"
+          class="img-fluid"
+        >
+      </div>
+
+      <div class="col-md-6">
+        <h5>Technology</h5>
+        <img 
+          src="https://images.unsplash.com/photo-1518770660439-4636190af475" 
+          alt="Technology"
+          class="img-fluid"
+        >
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio" class="bg-light">
+  <div class="container">
+    <h2>My Portfolio</h2>
+
+    <div class="row mt-4 align-items-center">
+      <div class="col-md-6">
+        <img 
+          src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" 
+          alt="Advancing technologies"
+          class="img-fluid"
+        >
+      </div>
+
+      <div class="col-md-6">
+        <h4>Future Data Analyst</h4>
+        <p>
+          I am interested in becoming a data analyst.
+          I enjoy working with data, discovering patterns, and turning data into insights.
+        </p>
+        <p>
+          My goal is to build strong analytical skills and work with modern technologies
+          such as data visualization, databases, and statistical analysis.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <h2>Contact Me</h2>
+
+    <p><strong>Email:</strong> Neupanehritik01@gmail.com</p>
+    <p><strong>Phone:</strong> 0413685004</p>
+
+    <form class="contact-form mt-3">
+      <label>Name</label>
+      <input type="text" required>
+
+      <label>Email</label>
+      <input type="email" required>
+
+      <label>Message</label>
+      <textarea rows="4"></textarea>
+
+      <button type="submit" class="btn btn-primary mt-3">Send</button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>© 2025 Hritik Neupane</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
